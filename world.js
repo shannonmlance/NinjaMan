@@ -16,15 +16,24 @@ function randWorld() {
         world[0].push(1);
         world[14].push(1);
     }
-    for(var row = 1; row < 14; row++) {
+    world[1].push(1);
+    world[13].push(1);
+    for(var i = 1; i < 14; i++) {
+        world[1].push(2);
+        world[13].push(2);
+    }
+    world[1].push(1);
+    world[13].push(1);
+    for(var row = 2; row < 13; row++) {
         world[row].push(1);
-        for(var i = 1; i < 14; i++) {
+        world[row].push(2);
+        for(var i = 2; i < 13; i++) {
             world[row].push(randInt(3));
         }
+        world[row].push(2);
         world[row].push(1);
     }
     world[1][1] = 0;
-    console.log(world);
     return world;
 }
 

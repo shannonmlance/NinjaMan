@@ -8,7 +8,7 @@
 .row {
     line-height: 0px;
 }
-.wall, .blank, .sushi, .onigiri, #ninjaman {
+.wall, .blank, .sushi, .onigiri, #ninjaman, #bluey, #pinky, #pumpky, #red {
     height: 40px;
     width: 40px;
     display: inline-block;
@@ -19,21 +19,33 @@
 .blank {
     background-color: black;
 }
-.sushi {
+.sushi, .onigiri, #ninjaman, #bluey, #pinky, #pumpky, #red {
     background-color: black;
-    background-image: url("img/sushi.png");
     background-size: contain;
+}
+#ninjaman, #bluey, #pinky, #pumpky, #red {
+    position: absolute;
+}
+.sushi {
+    background-image: url("img/sushi.png");
 }
 .onigiri {
-    background-color: black;
     background-image: url("img/onigiri.png");
-    background-size: contain;
 }
 #ninjaman {
-    background-color: black;
     background-image: url("img/ninja.gif");
-    background-size: contain;
-    position: absolute;
+}
+#bluey {
+    background-image: url("img/bluey.gif");
+}
+#pinky {
+    background-image: url("img/pinky.gif");
+}
+#pumpky {
+    background-image: url("img/pumpky.gif");
+}
+#red {
+    background-image: url("img/red.gif");
 }
 h3 {
     margin-left: 50px;

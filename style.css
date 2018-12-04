@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.intro {
+    color: aqua;
+}
+.row {
+    line-height: 0px;
+}
+.wall, .blank, .sushi, .onigiri, #ninjaman {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+.wall {
+    background-color: blue;
+}
+.blank {
+    background-color: black;
+}
+.sushi {
+    background-color: black;
+    background-image: url("img/sushi.png");
+    background-size: contain;
+}
+.onigiri {
+    background-color: black;
+    background-image: url("img/onigiri.png");
+    background-size: contain;
+}
+#ninjaman {
+    background-color: black;
+    background-image: url("img/ninja.gif");
+    background-size: contain;
+    position: absolute;
+}
+h3 {
+    margin-left: 50px;
+}
